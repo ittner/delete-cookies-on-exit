@@ -29,6 +29,7 @@
   <em:name>Delete Cookies on Exit</em:name>
   <em:description>Delete all cookies when you close Firefox Mobile.</em:description>
   <em:creator>Alexandre Erwin Ittner</em:creator>
+  <em:homepageURL>http://www.ittner.com.br/</em:homepageURL>
 
  </Description>
 </RDF>

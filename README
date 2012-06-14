@@ -1,0 +1,61 @@
+An extension to delete cookies from Firefox Mobile when the browser is closed
+
+(c) 2012 Alexandre Erwin Ittner <alexandre *at* ittner.com.br>
+http://www.ittner.com.br/
+
+
+
+== Description ==
+
+Unlike the Firefox for desktop, the native Firefox Mobile for Android devices
+(aka Fennec) lacks a setting to delete all cookies when the browser is closed
+(ie, turn all cookies in session cookies). Such option prevents sites and web
+trackers from persisting data across browsing sessions, improving user privacy.
+
+This extension aims to fix the problem until Firefox Mobile gets that feature
+and, once enabled, will delete *ALL* cookies upon exit -- there is no white
+list for allowed cookies yet.
+
+THIS ADD-ON IS NOT INTENDED TO RUN IN FIREFOX FOR DESKTOP! After all, cookie
+purging is a built-in feature for that version.
+
+
+
+== Usage ==
+
+The add-on have no user interface and will not clutter your device's screen
+with any widget. To enable or disable the automatic deletion of cookies, just
+go to Menu -> More -> Add-ons -> Delete Cookies on Exit -> Enable/Disable.
+
+
+
+== New features and development ==
+
+This add-on was born as a simple hack to solve a very specific problem and
+no new features are planed for the short term. A possible enhancement is
+to allow white-listing of cookies that will persist across sessions -- since
+I do not use Firefox Mobile for extended website logins and I am not sure if
+it worth the development effort, but any developer interested in such feature
+is welcome to write it.
+
+All development is done in GitHub. Just check out the repository
+https://github.com/ittner/delete-cookies-on-exit
+
+
+
+
+== License ==
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
