@@ -7,17 +7,33 @@ http://www.ittner.com.br/
 
 == Description ==
 
-Unlike the Firefox for desktop, the native Firefox Mobile for Android devices
-(aka Fennec) lacks a setting to delete all cookies when the browser is closed
-(ie, turn all cookies in session cookies). Such option prevents sites and web
-trackers from persisting data across browsing sessions, improving user privacy.
+This add-on deletes all cookies when Firefox Mobile is closed, but stills
+allows them to be used in the current browsing session (so it do not prevent
+site logins which needs cookies).  This improves user privacy by preventing
+websites and, more importantly, ad-providers and web trackers from persisting
+any information (specially personally identifiable information) between two
+browsing sessions.
 
-This extension aims to fix the problem until Firefox Mobile gets that feature
-and, once enabled, will delete *ALL* cookies upon exit -- there is no white
-list for allowed cookies yet.
+THIS ADD-ON IS NOT INTENDED TO RUN IN FIREFOX FOR DESKTOP! Cookie purging is
+a built-in feature in that version, so no extension is needed.
 
-THIS ADD-ON IS NOT INTENDED TO RUN IN FIREFOX FOR DESKTOP! After all, cookie
-purging is a built-in feature for that version.
+
+= Justification =
+
+Unlike Firefox for desktop, the native Firefox Mobile for Android devices do
+not have any advanced cookie management options, including a setting to delete
+all cookies when the browser is closed (ie, turn all cookies in session
+cookies), which improves user privacy by preventing sites and web trackers
+from persisting data across browsing sessions.  This problem is exacerbated
+by the lack of a setting to reject third-party cookies -- there is an option
+to disable *all* cookies, but using it also prevents any benign cookie usage
+(eg. login to sites). There is a feature request open to add these options in
+https://bugzilla.mozilla.org/show_bug.cgi?id=764433 .
+
+This extension allows the user to delete the cookies when the browser closes,
+preventing websites and (more importantly) ad-providers and web trackers from
+correlating two browsing sessions.
+
 
 
 
@@ -31,15 +47,15 @@ go to Menu -> More -> Add-ons -> Delete Cookies on Exit -> Enable/Disable.
 
 == New features and development ==
 
-This add-on was born as a simple hack to solve a very specific problem and
-no new features are planed for the short term. A possible enhancement is
-to allow white-listing of cookies that will persist across sessions -- since
-I do not use Firefox Mobile for extended website logins and I am not sure if
-it worth the development effort, but any developer interested in such feature
-is welcome to write it.
+This add-on was born to solve a very specific problem and no new features are
+planned for the short term. A possible enhancement is to allow white-listing
+of cookie that may persist across sessions but, since I do not use Firefox
+Mobile for extended website logins, I am not sure if it is worth the
+development effort, but any developer interested in such feature is welcome
+to write it.
 
-All development is done in GitHub. Just check out the repository
-https://github.com/ittner/delete-cookies-on-exit
+All development is done in GitHub and comments and feedback are welcome. The
+repository is available in https://github.com/ittner/delete-cookies-on-exit
 
 
 
